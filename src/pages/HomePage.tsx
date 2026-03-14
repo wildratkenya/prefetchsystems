@@ -4,8 +4,7 @@ import { supabase } from '@/lib/supabase';
 import ProductCard from '@/components/ProductCard';
 import { Search, Printer, Package, Wrench, Layers, ArrowRight, Shield, Truck, Headphones, CheckCircle } from 'lucide-react';
 
-const HERO_BG = 'https://cdn.jsdelivr.net/gh/wildratkenya/prefetch/images/Gemini_Generated_Image_vfb3prvfb3prvfb3.png
-';
+const HERO_BG = 'https://cdn.jsdelivr.net/gh/wildratkenya/prefetch/images/Gemini_Generated_Image_vfb3prvfb3prvfb3.png';
 const LOGO_URL = 'https://d64gsuwffb70l.cloudfront.net/699c6111136bd966ef67d342_1771935144580_898e7478.png';
 
 const HomePage: React.FC = () => {

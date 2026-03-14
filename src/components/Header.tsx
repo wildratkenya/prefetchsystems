@@ -153,7 +153,7 @@ const Header: React.FC = () => {
           <div className="fixed inset-0 bg-black/40 z-50" onClick={() => setIsCartOpen(false)} />
           <div className="fixed right-0 top-0 h-full w-full max-w-md bg-white z-50 shadow-2xl flex flex-col">
             <div className="flex items-center justify-between p-4 border-b">
-              <h2 className="text-lg font-bold text-gray-900" data-mixed-content="true" data-mixed-content="true">Shopping Cart ({cartCount})</h2>
+              <h2 className="text-lg font-bold text-gray-900">Shopping Cart ({cartCount})</h2>
               <button onClick={() => setIsCartOpen(false)} className="p-2 hover:bg-gray-100 rounded-lg">
                 <X className="w-5 h-5" />
               </button>
@@ -167,7 +167,7 @@ const Header: React.FC = () => {
                   <div className="flex-1 min-w-0">
                     <p className="text-sm font-medium text-gray-900 truncate">{item.name}</p>
                     {item.variant_title && <p className="text-xs text-gray-500">{item.variant_title}</p>}
-                    <p className="text-sm font-bold text-[#1a365d] mt-1" data-mixed-content="true" data-mixed-content="true">{formatKES(item.price)} x {item.quantity}</p>
+                    <p className="text-sm font-bold text-[#1a365d] mt-1">{formatKES(item.price)} x {item.quantity}</p>
                   </div>
                   <button onClick={() => removeFromCart(item.product_id, item.variant_id)} className="text-gray-400 hover:text-red-500 p-1">
                     <X className="w-4 h-4" />
